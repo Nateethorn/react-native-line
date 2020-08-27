@@ -224,7 +224,7 @@ class RNLine(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule
                     "access_token" to accessToken.tokenString,
                     "expires_in" to accessToken.expiresInMillis,
                     "id_token" to lineIdToken?.rawString
-                    "email" to lineIdToken.email
+                    "email" to lineIdToken?.email
             )
     )
 
