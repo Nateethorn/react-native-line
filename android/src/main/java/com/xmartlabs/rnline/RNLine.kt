@@ -224,7 +224,7 @@ class RNLine(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule
             mapOf(
                     "access_token" to accessToken.tokenString,
                     "expires_in" to accessToken.expiresInMillis,
-                    "id_token" to lineIdToken?.rawString
+                    "id_token" to lineIdToken?.rawString,
                     "email" to lineIdToken?.email
             )
     )
