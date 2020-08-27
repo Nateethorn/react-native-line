@@ -119,7 +119,6 @@ class RNLine(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule
     }
 
     fun handleActivityResult(requestCode: Int, resultCode: Int, intent: Intent?) {
-        print("Check")
         if (requestCode != LOGIN_REQUEST_CODE) return
 
         if (resultCode != Activity.RESULT_OK || intent == null) {
